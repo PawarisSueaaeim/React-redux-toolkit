@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <Login/>
-
       <h1>username: {username}</h1>
     </main>
   )

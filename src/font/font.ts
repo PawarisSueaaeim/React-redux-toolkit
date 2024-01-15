@@ -1,4 +1,4 @@
-import { Inter, Roboto, Public_Sans } from 'next/font/google'
+import { Inter, Roboto, Public_Sans, Noto_Sans_Thai } from 'next/font/google'
 
 export const publicSan = Public_Sans({
     subsets: ['latin'],
@@ -15,4 +15,10 @@ export const roboto = Roboto({
     weight: ['100', '400', '700'],
     subsets: ['latin'],
     display: 'swap',
-})    
+})
+
+export const notoSansThai = Noto_Sans_Thai({
+    weight: ['200', '400', '700'],
+    subsets: ['latin'],
+    display: 'swap',
+})

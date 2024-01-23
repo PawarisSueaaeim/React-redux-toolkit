@@ -4,7 +4,7 @@ type Props = {}
 
 export default function PrimaryFooter({}: Props) {
   return (
-    <div className='flex justify-center items-center bg-orange-400 h-20'>
+    <div className='flex justify-center items-center bg-[#748E63] h-40'>
         <span className='text-lg text-slate-50'>Copy Right | Pawaris Rabeab</span>
     </div>
   )

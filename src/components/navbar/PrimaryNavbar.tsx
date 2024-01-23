@@ -16,8 +16,8 @@ export default function PrimaryNavbar({}: Props) {
         </div>
         <div className='flex justify-center items-center text-[22px] mr-10 relative h-20 w-20'>
           <FaShoppingBasket />
-          <div className='absolute bg-red-500 rounded-full w-5 h-5 flex items-center justify-center right-5 top-5'>
-            <span className='text-sm'>1</span>
+          <div className='absolute bg-red rounded-full w-5 h-5 flex items-center justify-center right-5 top-5'>
+            <span className='text-sm text-white'>1</span>
           </div>
         </div>
       </div>

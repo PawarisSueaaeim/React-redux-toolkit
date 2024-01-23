@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
 
-type Props = {}
+type Props = {
+  title: string;
+  onClick?: () => void;
+};
 
-export default function ButtonPrimary({}: Props) {
+export default function ButtonPrimary({ title, onClick }: Props) {
   return (
-    <div>ButtonPrimary</div>
-  )
+    <button className="transition-all delay-150 h-[50px] w-[150px] bg-primary rounded-xl hover:-translate-y-1 hover:scale-110 hover:bg-secondary hover:text-white" onClick={onClick}>
+      {title}
+    </button>
+  );
 }

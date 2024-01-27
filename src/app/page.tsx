@@ -2,6 +2,7 @@
 import { ButtonPrimary } from "@/common/button";
 import { useAppSelector } from "@/redux/store";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const username = useAppSelector((state) => state.authSlice.value.username);
@@ -17,7 +18,9 @@ export default function Home() {
             <div className="text-2xl pt-10">สั่งซื้อส้มโอออนไลน์</div>
             <div className="text-2xl">ส่งตรงจากสวนส้มโอ อ.ศรีสัชนาลัย จ.สุโขทัย</div>
             <div className="flex item-center justify-center mt-12">
-              <ButtonPrimary title="เลือกสินค้า"/>
+              <Link href='./product'>
+                <ButtonPrimary title="เลือกสินค้า"/>
+              </Link>
             </div>
           </div>
         </div>

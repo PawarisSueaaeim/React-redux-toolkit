@@ -1,14 +1,22 @@
-import { getListPokemons } from "@/service/api/pokemon";
-import axios from "axios";
 import React from "react";
+import { getListPokemons } from "@/service/api/pokemon";
 
 type Props = {};
 
-const baseUrl = process.env.NEXT_PUBLIC_POKEMON_API || "";
+type list = {
+  name: string;
+  url: string;
+};
 
-export default function Product({}: Props) {
-  const response = axios.get(baseUrl);
-  console.log(response);
+export default async function Product({}: Props) {
+  const data = await getListPokemons();
+  console.log(data);
 
-  return <div>Product</div>;
+  return (
+    <div>
+      {data.map((list: list, index: number) => {
+        return <div key={list.name + index}>{list.name}</div>;
+      })}
+    </div>
+  );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { getListPokemons } from "@/service/api/pokemon";
+import Image from "next/image";
 
 type Props = {};
 
@@ -9,14 +10,19 @@ type list = {
 };
 
 export default async function Product({}: Props) {
-  const data = await getListPokemons();
-  console.log(data);
+  const data = await getListPokemons(20, 0);
+  console.log(data)
 
   return (
-    <div>
-      {data.map((list: list, index: number) => {
-        return <div key={list.name + index}>{list.name}</div>;
-      })}
+    <div className="flex items-center">
+      <div className="p-10">
+        {data.map((list: list, index: number) => {
+          return <div key={list.name + index} className="flex flex-col items-center space-y-6">
+            {/* <Image src={list.}/> */}
+            {list.name}
+            </div>;
+        })}
+      </div>
     </div>
   );
 }

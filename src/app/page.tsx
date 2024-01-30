@@ -1,11 +1,20 @@
 "use client";
 import { ButtonPrimary } from "@/common/button";
+import { keepProduct } from "@/redux/cart/cartSlice";
 import { useAppSelector } from "@/redux/store";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 
 export default function Home() {
+  const dispatch = useDispatch();
   const username = useAppSelector((state) => state.authSlice.value.username);
+  const testcart = useAppSelector((state) => state.cartSlice.value.product_name);
+
+  const handleOnClick = () => {
+    dispatch(keepProduct("ส้มโอ"));
+  };
 
   return (
     <main className="grid grid-cols-1 md:grid-cols-2">
@@ -19,9 +28,10 @@ export default function Home() {
             <div className="text-2xl">ส่งตรงจากสวนส้มโอ อ.ศรีสัชนาลัย จ.สุโขทัย</div>
             <div className="flex item-center justify-center mt-12">
               <Link href='./product'>
-                <ButtonPrimary title="เลือกสินค้า"/>
+                <ButtonPrimary title="เลือกสินค้า" onClick={handleOnClick}/>
               </Link>
             </div>
+            {testcart}
           </div>
         </div>
       </div>

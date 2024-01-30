@@ -17,9 +17,8 @@ export default async function Product({}: Props) {
     <div className="flex items-center">
       <div className="p-10">
         {data.map((list: list, index: number) => {
-          return <div key={list.name + index} className="flex flex-col items-center space-y-6">
-            {/* <Image src={list.}/> */}
-            {list.name}
+          return <div key={list.name + index}>
+              {list.name}
             </div>;
         })}
       </div>

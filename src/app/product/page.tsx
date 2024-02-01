@@ -1,6 +1,5 @@
 import React from "react";
 import { getListPokemons } from "@/service/api/pokemon";
-import Image from "next/image";
 
 type Props = {};
 

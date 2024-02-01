@@ -13,10 +13,10 @@ const config: Config = {
       },
     },
     colors: {
-      primary: '#609966',
-      secondary: '#40513B',
-      tertiary: '#9DC08B',
-      quaternary: '#EDF1D6',
+      primary: '#EEEDEB',
+      secondary: '#E0CCBE',
+      tertiary: '#747264',
+      quaternary: '#3C3633',
       //color other
       white: '#F6F6F6',
       red: '#FF0000',

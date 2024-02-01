@@ -11,15 +11,6 @@ export const getPokemon = async (url: string) => {
     }
 };
 
-export const getPokemonDitto = async () => {
-    try {        
-        const response = await axios.get(baseUrl + `pokemon/ditto`)
-        return response.data.results;
-    } catch (error) {
-        console.log(error)
-    }
-};
-
 export const getListPokemons = async (limit: number, offset: number) => {
     try {        
         const response = await axios.get(`${baseUrl}?limit=${limit}&offset=${offset}`)

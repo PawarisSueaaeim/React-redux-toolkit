@@ -1,9 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-type InitialState = {
-    value: AuthState,
-};
-
 type AuthState = {
     value: {
         isAuth: boolean,
@@ -13,10 +9,10 @@ type AuthState = {
     }
 };
 
-const initialState = {
+const authState: AuthState = {
     value: {
         isAuth: false,
-        username: "",
+        usernames: "",
         uid: "",
         isModerator: false,
     },
@@ -24,16 +20,16 @@ const initialState = {
 
 export const auth = createSlice({
     name: "auth",
-    initialState,
+    initialState: authState,
     reducers: {
         logOut: () => {
-            return initialState
+            return authState
         },
         logIn: (state, action: PayloadAction<string>) => {
             return {
                 value: {
                     isAuth: true,
-                    username: action.payload,
+                    usernames: action.payload,
                     uid: "sldkfj2123sd15",
                     isModerator: false,
                 },

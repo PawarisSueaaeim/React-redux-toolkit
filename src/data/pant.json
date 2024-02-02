@@ -1,0 +1,14 @@
+[
+    {
+        "color": "navy",
+        "src": "/image/navy.jpg"
+    },
+    {
+        "color": "green",
+        "src": "/image/green.jpg"
+    },
+    {
+        "color": "white",
+        "src": "/image/white.jpg"
+    }
+]

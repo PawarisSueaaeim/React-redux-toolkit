@@ -1,17 +1,16 @@
 import Link from 'next/link'
 import React from 'react'
-import { FaShoppingBasket } from "react-icons/fa";
 
 type Props = {}
 
 export default function PrimaryNavbar({}: Props) {
   return (
       <div className='flex justify-between items-center px-2 py-1 text-slate-900 h-20 fixed'>
-        <div className='flex gap-10 ml-10'>
-          <span className='text-lg font-semibold p-3'><Link href="/">ระเบียบ</Link></span>
+        <div className='flex gap-10 md:ml-10'>
+          <span className='text-lg md:text-2xl font-semibold p-3'><Link href="/">ระเบียบ</Link></span>
           <ul className='flex gap-5 justify-center items-center'>
-            <li className='hover:bg-slate-300 ease-out duration-500 rounded-md p-3'><Link href="/aboutus"></Link>เกี่ยวกับเรา</li>
-            <li className='hover:bg-slate-300 ease-out duration-500 rounded-md p-3'><Link href="contactus"></Link>ติดต่อเรา</li>
+            <li className='hover:bg-slate-300 ease-out duration-500 rounded-md p-3 text-lg md:text-2xl'><Link href="/aboutus"></Link>เกี่ยวกับเรา</li>
+            <li className='hover:bg-slate-300 ease-out duration-500 rounded-md p-3 text-lg md:text-2xl'><Link href="contactus"></Link>ติดต่อเรา</li>
           </ul>
         </div>
       </div>

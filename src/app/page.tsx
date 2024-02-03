@@ -24,11 +24,11 @@ export default function Home() {
 
   return (
     <main className="grid grid-cols-1 md:grid-cols-2">
-      <div className="bg-gradient-to-t from-primary h-[400px] md:h-[900px]">
+      <div className="bg-gradient-to-t from-primary h-full">
         <div className="flex item-center justify-center">
           <div className="flex flex-col pt-20 pl-4 md:pt-40 md:pl-4">
             <div className="text-4xl">สวัสดี, ยินดีต้อนรับ</div>
-            <div className="text-slate-500 text-3xl text-tertiary">ระเบียบ</div>
+            <div className="text-slate-500 text-3xl">ระเบียบ</div>
             <div className="text-slate-500 text-3xl pt-2">
               กางเกงสแล็คผู้ชาย
             </div>
@@ -51,7 +51,7 @@ export default function Home() {
                 <span className="text-sm">สีครีม</span>
               </div>
             </div>
-            <div className="flex item-center justify-center mt-12">
+            <div className="flex item-center justify-center mt-12 mb-6">
               <Link href="./product">
                 <ButtonPrimary title="เลือกสินค้า"/>
               </Link>

@@ -9,8 +9,8 @@ export default function PrimaryNavbar({}: Props) {
         <div className='flex gap-10 md:ml-10'>
           <span className='text-lg md:text-2xl font-semibold p-3'><Link href="/">ระเบียบ</Link></span>
           <ul className='flex gap-5 justify-center items-center'>
-            <li className='hover:bg-slate-300 ease-out duration-500 rounded-md p-3 text-lg md:text-2xl'><Link href="/aboutus"></Link>เกี่ยวกับเรา</li>
-            <li className='hover:bg-slate-300 ease-out duration-500 rounded-md p-3 text-lg md:text-2xl'><Link href="contactus"></Link>ติดต่อเรา</li>
+            <li className='hover:bg-slate-300 ease-out duration-500 rounded-md p-3 text-lg md:text-2xl'><Link href="/aboutus">เกี่ยวกับเรา</Link></li>
+            <li className='hover:bg-slate-300 ease-out duration-500 rounded-md p-3 text-lg md:text-2xl'><Link href="/contactus">ติดต่อเรา</Link></li>
           </ul>
         </div>
       </div>

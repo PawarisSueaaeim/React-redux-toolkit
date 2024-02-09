@@ -37,6 +37,7 @@ export default function Home() {
             </div>
             <div className="text-2xl pt-10">คุณภาพดี</div>
             <div className="text-2xl">MADE IN THAILAND</div>
+            <div className="text-2xl">HAND MADE</div>
             <div className="flex justify-center m-10 gap-10">
               <div className="flex flex-col justify-center items-center gap-4">
                 <ButtonCircle bgColor="bg-[#0C2D57]" onClick={handleOnClickNavy}/>
@@ -51,9 +52,28 @@ export default function Home() {
                 <span className="text-sm">สีครีม</span>
               </div>
             </div>
-            <div className="flex item-center justify-center mt-12 mb-6">
-              <Link href="./product">
-                <ButtonPrimary title="เลือกสินค้า"/>
+            <div className="flex flex-col item-center justify-center mt-12 mb-6 gap-4">
+              <Link href="">
+                <ButtonPrimary 
+                  title="เลือกสินค้าผ่าน Shopee" 
+                  outline={true} 
+                  outlineColor="[#FF4500]"
+                  textColor="text-[#FF4500]"
+                  hoverColor="hover:bg-[#FF4500]"
+                  hoverTextColor="hover:text-white"
+                  icon={'/icons/icons8-shopee-144.png'}
+                />
+              </Link>
+              <Link href="">
+                <ButtonPrimary 
+                  title="เลือกสินค้าผ่าน Lazada" 
+                  outline={true} 
+                  outlineColor="[#DB0011]"
+                  textColor="text-[#DB0011]"
+                  hoverColor="hover:bg-[#DB0011]"
+                  hoverTextColor="hover:text-white"
+                  icon={'/icons/lazada.png'}
+                />
               </Link>
             </div>
           </div>

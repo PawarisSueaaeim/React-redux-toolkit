@@ -17,9 +17,12 @@ const config: Config = {
       secondary: '#E0CCBE',
       tertiary: '#747264',
       quaternary: '#3C3633',
-      //color other
+      
       white: '#F6F6F6',
       red: '#FF0000',
+    },
+    fontFamily: {
+      
     },
   },
   plugins: [],

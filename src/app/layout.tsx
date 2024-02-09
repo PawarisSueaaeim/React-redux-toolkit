@@ -6,8 +6,8 @@ import { PrimaryNavbar } from '@/components/navbar'
 import { PrimaryFooter } from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: 'Pokemons shopp',
-  description: 'Training Next 14 with redux toolkit',
+  title: 'ระเบียบ',
+  description: 'กางเกงสแล็คผู้ชาย',
 }
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={publicSan.className}>
         <ReduxProvider>
           <PrimaryNavbar/>
             {children}

@@ -8,7 +8,7 @@ export default function PrimaryFooter({}: Props) {
     <div className="bg-secondary h-50 p-5 md:p-10">
       <div className="flex flex-col space-y-20">
         <div className="flex flex-col">
-          <div className="text-md md:text-lg text-quaternary">ระเบียบ</div>
+          <div className="text-2xl md:text-2xl text-quaternary">ระเบียบ</div>
           <div className="flex gap-4">
             <span className="text-quaternary">ติดตามเรา:</span>
             <span>

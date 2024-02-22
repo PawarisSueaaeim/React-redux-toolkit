@@ -10,7 +10,6 @@ type list = {
 
 export default async function Product({}: Props) {
   const data = await getListPokemons(20, 0);
-  console.log(data)
 
   return (
     <div className="flex items-center">

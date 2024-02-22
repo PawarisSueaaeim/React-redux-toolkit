@@ -25,7 +25,6 @@ export const select = createSlice({
     initialState: selectState,
     reducers: {
         selected: (state, action: PayloadAction<string>) => {
-            console.log(action.payload)
             switch (action.payload) {
                 case "navy":
                     state.img = pantDatas[0].src
